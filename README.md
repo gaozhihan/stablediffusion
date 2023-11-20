@@ -133,6 +133,11 @@ To sample from the _SD2.1-v_ model, run the following:
 ```
 python scripts/txt2img.py --prompt "a professional photograph of an astronaut riding a horse" --ckpt <path/to/768model.ckpt/> --config configs/stable-diffusion/v2-inference-v.yaml --H 768 --W 768  
 ```
+My custom command:
+```
+python scripts/txt2img.py --prompt "a professional photograph of an astronaut riding a horse" --ckpt ./pretrained/v2-1_768-ema-pruned.ckpt --config configs/stable-diffusion/v2-inference-v.yaml --H 768 --W 768 --device cuda --dpm --n_samples 1
+```
+
 or try out the Web Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/stabilityai/stable-diffusion).
 
 To sample from the base model, use
