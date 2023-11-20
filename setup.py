@@ -9,5 +9,10 @@ setup(
         'torch',
         'numpy',
         'tqdm',
+        'omegaconf',
+        'einops',
+        'pytorch-lightning==1.9.5',
+        'kornia',
+        'open_clip_torch',
     ],
 )
